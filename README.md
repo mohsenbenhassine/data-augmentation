@@ -34,5 +34,4 @@ The repository includes datasets and scripts essential to the Empirical Copula G
 - Improving scalability with parallelized implementations.
 - Expanding support for time series and graph-based data.
 
-## License
-[Specify your license here, e.g., MIT, Apache 2.0, or CC BY 4.0]
+
