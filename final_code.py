@@ -18,15 +18,15 @@ import numpy as np
 
 def multivariate_energy_distance(D, D2):
     """
-    Calcule la distance d'énergie entre deux ensembles de données multivariés avec types mixtes.
-    Les variables catégorielles sont encodées en one-hot et les variables numériques sont standardisées.
+    Calcule la distance d'Ã©nergie entre deux ensembles de donnÃ©es multivariÃ©s avec types mixtes.
+    Les variables catÃ©gorielles sont encodÃ©es en one-hot et les variables numÃ©riques sont standardisÃ©es.
 
-    Paramètres :
-    - D  : np.array de taille (n1, m) (Données originales)
-    - D2 : np.array de taille (n2, m) (Données générées)
+    ParamÃ¨tres :
+    - D  : np.array de taille (n1, m) (DonnÃ©es originales)
+    - D2 : np.array de taille (n2, m) (DonnÃ©es gÃ©nÃ©rÃ©es)
 
     Retourne :
-    - Distance d'énergie entre D et D2
+    - Distance d'Ã©nergie entre D et D2
     """
     
     # Get data types for each column in D
@@ -96,17 +96,17 @@ def permutation_test(D, D2, compute_stat, n_permutations=1000):
     """
     Test de permutation pour comparer les distributions de D et D2.
 
-    Paramètres :
-    - D : np.array (n1, m) - Données originales
-    - D2 : np.array (n2, m) - Données générées
-    - compute_stat : Fonction pour calculer la statistique (ici, distance d'énergie)
-    - n_permutations : Nombre d'échantillons aléatoires générés
+    ParamÃ¨tres :
+    - D : np.array (n1, m) - DonnÃ©es originales
+    - D2 : np.array (n2, m) - DonnÃ©es gÃ©nÃ©rÃ©es
+    - compute_stat : Fonction pour calculer la statistique (ici, distance d'Ã©nergie)
+    - n_permutations : Nombre d'Ã©chantillons alÃ©atoires gÃ©nÃ©rÃ©s
 
     Retourne :
-    - Statistique observée
+    - Statistique observÃ©e
     - p-value du test
     """
-    combined = np.vstack([D, D2])  # Concaténation des deux jeux de données
+    combined = np.vstack([D, D2])  # ConcatÃ©nation des deux jeux de donnÃ©es
     observed_stat = compute_stat(D, D2)
     permuted_stats = []
 
@@ -459,17 +459,17 @@ if __name__ == "__main__":
     
     # Plot marginal distributions
   energy_dist = multivariate_energy_distance(data, generated_data)
-  print(f"Distance d'Énergie entre D1 et D2 : {energy_dist:.4f}")
+  print(f"Distance d'Ã‰nergie entre D1 et D2 : {energy_dist:.4f}")
 
     # Test statistique par permutation
   stat, p_val = permutation_test(data, generated_data, multivariate_energy_distance, n_permutations=1000)
-  print(f"Test de permutation - Distance d'Énergie : {stat:.4f}, p-value : {p_val:.4f}")
+  print(f"Test de permutation - Distance d'Ã‰nergie : {stat:.4f}, p-value : {p_val:.4f}")
 
-    # Interprétation
+    # InterprÃ©tation
   if p_val < 0.05:
-    print("On rejette H0 : D1 et D2 ont des distributions significativement différentes.")
+    print("On rejette H0 : D1 et D2 ont des distributions significativement diffÃ©rentes.")
   else:
-    print("On ne peut pas rejeter H0 : D1 et D2 semblent suivre la même distribution.")
+    print("On ne peut pas rejeter H0 : D1 et D2 semblent suivre la mÃªme distribution.")
 
 
     #plot_marginal_comparisons(data, generated_data)
