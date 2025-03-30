@@ -2,4 +2,5 @@ We introduces the Empirical Copula Generator, a novel non-parametric method for 
 The real world datasets are described alongwith code in files: Forest Fires Dataset,wdbc Dataset,ecoli and census.
 createstar and augmentstar contain the code to create star form and generate new data from it
 multiforms and augmentmultiforms contain the code to create multi forms and generate like data 
+Finalcode and optimizedcode are the final code used to generate augmented data and the optimizes O2 version
 
