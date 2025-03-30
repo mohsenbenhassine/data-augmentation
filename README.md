@@ -24,11 +24,13 @@ The repository includes datasets and scripts essential to the Empirical Copula G
 ### Quality Assessment
 - **`Assessmnetoptimalversion.py`**: A script to evaluate the quality of the synthetic data produced by the generator.
 
+## Experiment results
+- **`experiments results.pdf`**: reports the results with graphics,statistic figures and heatmaps .
+
 ## Key Features
 - **Privacy Preservation**: Ensures confidentiality of sensitive data.
 - **Statistical Fidelity**: Maintains both marginal and joint distributions accurately.
 - **Versatility**: Applicable to diverse domains and dataset types.
-
 ## Future Directions
 - Benchmarking against methods like SMOTE, GANs, SDV-G, and VAEs.
 - Improving scalability with parallelized implementations.
