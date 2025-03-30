@@ -3,4 +3,4 @@ The real world datasets are described alongwith code in files: Forest Fires Data
 createstar and augmentstar contain the code to create star form and generate new data from it
 multiforms and augmentmultiforms contain the code to create multi forms and generate like data 
 Finalcode and optimizedcode are the final code used to generate augmented data and the optimizes O2 version
-
+Assessmnetoptimalversion is the code used to assess the quality of our generator
