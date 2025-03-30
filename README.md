@@ -1,6 +1,6 @@
 
 # Empirical Copula Generator
-
+<img src="figure 6.png" alt="multi-forms" width="500"/>
 ## Overview
 This repository introduces the Empirical Copula Generator, a novel non-parametric method designed to create synthetic datasets that preserve the statistical properties of original data while safeguarding privacy. This tool addresses a critical need for high-fidelity synthetic data in domains like healthcare, finance, and social sciences, where data scarcity and confidentiality often limit analysis. Through extensive experiments on both synthetic and real-world datasets—including Adult, Ecoli, Forest Fires, and Wisconsin Breast Cancer—the generator proves its ability to maintain marginal and joint distributions with exceptional accuracy, achieving a Jensen-Shannon Divergence as low as 0.0292 for the Wisconsin dataset. By delivering a robust and versatile solution for data augmentation and privacy-preserving research, this work bridges the gap between data availability and statistical integrity, enabling advanced machine learning applications and opening doors for future methodological advancements.
 
@@ -35,5 +35,5 @@ The repository includes datasets and scripts essential to the Empirical Copula G
 - Benchmarking against methods like SMOTE, GANs, SDV-G, and VAEs.
 - Improving scalability with parallelized implementations.
 - Expanding support for time series and graph-based data.
-<img src="figure 6.png" alt="multi-forms" width="500"/>
+
 
