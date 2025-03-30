@@ -35,5 +35,5 @@ The repository includes datasets and scripts essential to the Empirical Copula G
 - Benchmarking against methods like SMOTE, GANs, SDV-G, and VAEs.
 - Improving scalability with parallelized implementations.
 - Expanding support for time series and graph-based data.
-<img src="figure6.png" alt="multi-forms" width="500"/>
+<img src="figure 6.png" alt="multi-forms" width="500"/>
 
